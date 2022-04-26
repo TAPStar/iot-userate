@@ -11,38 +11,38 @@ function createData(time: string, amount?: number) {
 const sensorData = [
     {
         name: "4/20",
-        uv: 35,
-        pv: 24,
+        DOP: 35,
+        POD1: 24,
     },
     {
         name: "4/21",
-        uv: 30,
-        pv: 15,
+        DOP: 30,
+        POD1: 15,
     },
     {
         name: "4/22",
-        uv: 25,
-        pv: 10,
+        DOP: 25,
+        POD1: 10,
     },
     {
         name: "4/23",
-        uv: 35,
-        pv: 20,
+        DOP: 35,
+        POD1: 20,
     },
     {
         name: "4/24",
-        uv: 38,
-        pv: 30,
+        DOP: 38,
+        POD1: 30,
     },
     {
         name: "4/25",
-        uv: 40,
-        pv: 40,
+        DOP: 40,
+        POD1: 40,
     },
     {
         name: "4/26",
-        uv: 38,
-        pv: 35,
+        DOP: 38,
+        POD1: 35,
     },
 ];
 
@@ -69,8 +69,8 @@ export default function Chart() {
                     <YAxis type="number" domain={[0, 100]} />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="pv" stroke="#8884d8" activeDot={{ r: 8 }} />
-                    <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                    <Line type="monotone" dataKey="DOP" stroke="#8884d8" activeDot={{ r: 8 }} />
+                    <Line type="monotone" dataKey="POD1" stroke="#82ca9d" />
                 </LineChart>
             </ResponsiveContainer>
         </React.Fragment>
